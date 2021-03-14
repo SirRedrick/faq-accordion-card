@@ -1,7 +1,9 @@
 import './App.css';
+import FaqCard from './components/FaqCard';
+import { faqData } from './data/faq-data.js';
 
 function App() {
-	return <h1>Hello</h1>;
+	return <FaqCard title="FAQ" body={faqData} />;
 }
 
 export default App;
