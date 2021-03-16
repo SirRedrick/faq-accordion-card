@@ -1,0 +1,21 @@
+.card {
+	background: #fff;
+	background-image: url('../images/bg-pattern-mobile.svg');
+	background-repeat: no-repeat;
+	background-position: center top;
+	border-radius: 2em;
+	padding: 135px 25px 25px 25px;
+	position: relative;
+}
+
+.card h1 {
+	text-align: center;
+	margin-top: 0;
+	color: var(--text-primary);
+}
+
+.card img {
+	margin-left: -10px;
+	position: absolute;
+	top: -108px;
+}

@@ -5,9 +5,11 @@ import { faqData } from './data/faq-data.js';
 
 function App() {
 	return (
-		<Card title="FAQ">
-			<FaqList data={faqData} />
-		</Card>
+		<div className="container">
+			<Card title="FAQ">
+				<FaqList data={faqData} />
+			</Card>
+		</div>
 	);
 }
 
