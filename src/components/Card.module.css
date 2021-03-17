@@ -2,7 +2,7 @@
 	background: url('../images/bg-pattern-mobile.svg') center top no-repeat, #fff;
 	border-radius: 2em;
 	width: 100%;
-	max-width: 920px;
+	max-width: 327px;
 	padding: 25px 25px 50px 25px;
 	position: relative;
 	display: flex;
@@ -33,15 +33,17 @@
 }
 
 .content {
-	flex: 1;
+	flex: auto;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 645px) {
 	.card {
 		flex-direction: row;
-		padding: 77px 95px;
-		background: url('../images/illustration-woman-online-desktop.svg') no-repeat,
-			url('../images/bg-pattern-desktop.svg'), #fff;
+		max-width: 920px;
+		justify-content: space-between;
+		padding: 25px;
+		background: url('../images/illustration-woman-online-desktop.svg') top 40% left -80px / 60% no-repeat,
+			url('../images/bg-pattern-desktop.svg') top 65% left -80px / 60% no-repeat, #fff;
 	}
 
 	.card h1 {
@@ -54,5 +56,29 @@
 
 	.desktop_image {
 		display: block;
+		position: absolute;
+		left: -100px;
+		animation: bounce 1.5s ease-in-out infinite alternate;
+	}
+
+	.content {
+		flex: 1;
+	}
+}
+
+@media (min-width: 860px) {
+	.card {
+		padding: 77px 95px;
+		background: url('../images/illustration-woman-online-desktop.svg') top 40% left -80px no-repeat,
+			url('../images/bg-pattern-desktop.svg') top 65% left -570px no-repeat, #fff;
+	}
+}
+
+@keyframes bounce {
+	from {
+		transform: translateY(5px);
+	}
+	to {
+		transform: translateY(-5px);
 	}
 }
