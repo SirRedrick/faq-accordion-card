@@ -26,12 +26,20 @@
 	color: var(--text-neutral);
 }
 
+.item_header button {
+	font-size: inherit;
+	font-weight: inherit;
+	color: inherit;
+	background: none;
+	border: none;
+}
+
 .item_header .active {
 	font-weight: bold;
 	color: var(--text-primary);
 }
 
-.item_header:hover h2 {
+.item_header:hover button {
 	color: var(--text-primary-active);
 }
 
